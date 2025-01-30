@@ -1,23 +1,17 @@
 
-.ai-upcoming-events-wrapper {
+.ai-upcoming-events-wrapper > .ai-upcoming-events > div > div {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
 }
 
-.ai-upcoming-events > div > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Align items vertically in the center */
-}
-
 .ai-upcoming-events-wrapper h2 {
-  margin-right: 5px; /* Reduce space between the title and the button */
+  margin-right: 8px; /* Adjust space between title and button */
   font-size: var(--heading-font-size-xl); /* Ensure the font size matches */
 }
 
 .ai-upcoming-events-wrapper .button-container {
-  /* Optional: Add any styling for the button container if needed */
+  margin: 0; /* Remove any default margin */
 }
 
 .ai-upcoming-events-wrapper .button {
@@ -32,4 +26,8 @@
   display: inline-block; /* Ensure button is inline with text */
   vertical-align: middle; /* Align button vertically in the middle */
   font-size: inherit !important; /* Ensure font size matches the surrounding text */
+  margin-top: 0; /* Adjust vertical alignment of the button */
+  position: relative;
+  top: 50%; /* Align button vertically with the heading */
+  transform: translateY(-50%); /* Center button vertically */
 }
